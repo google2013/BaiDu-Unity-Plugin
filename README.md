@@ -137,4 +137,5 @@ Additional Resources
 ====================
 * [Baidu](https://ssp.baidu.com/)
 * [Baidu Unity Plugin Home](https://github.com/unity-plugins/BaiDu-Unity-Plugin)
+* qq group 532855630
 
