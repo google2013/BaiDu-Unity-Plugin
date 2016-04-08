@@ -42,7 +42,7 @@ platform, then **Switch Platform**, then **Build**. This will export an
 XCode project. You'll need to do the following before you can run it:
  Add the following framework to xcode project
 
-    AdSupport.framework,CoreTelephony.framework,StoreKit.framework,MessageUI.framework
+    AdSupport.framework,CoreTelephony.framework,StoreKit.framework,MessageUI.framework,Security.framework
 
 
 Running the Unity Baidu Plugin demo code 

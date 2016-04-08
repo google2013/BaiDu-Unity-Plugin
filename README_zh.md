@@ -67,7 +67,7 @@ Unity项目将会被导出为ios工程。为了顺利编译ios项目，你需要
 
 Add the following framework to xcode project
 
-    AdSupport.framework,CoreTelephony.framework,StoreKit.framework,MessageUI.framework
+    AdSupport.framework,CoreTelephony.framework,StoreKit.framework,MessageUI.framework,Security.framework
 
  把下面的frame 添加至项目
 
