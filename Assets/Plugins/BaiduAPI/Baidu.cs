@@ -11,7 +11,7 @@ namespace baidu
         public event BaiduEventHandler videoEventHandler;
 
 		private static Baidu _instance;	
-		private AndroidJavaObject jbaidu;
+	
 		public static Baidu Instance()
 	    {
 	        if(_instance == null)
@@ -120,6 +120,7 @@ namespace baidu
         }
         
 #elif UNITY_ANDROID
+	private AndroidJavaObject jbaidu;
         private void preInitBaidu(){
 			if (jbaidu == null) {
                 AndroidJavaClass baiduUnityPluginClass = new AndroidJavaClass("com.baidu.plugin.BaiduUnityPlugin");
