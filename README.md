@@ -17,7 +17,7 @@ BaiduUnityPlugin.unitypackage is the plugin  file for those that want to easily 
 
 Build base on 
 ------------
-Baidu iOS SDK 3 ,android sdk 4
+Baidu iOS SDK 4.3 ,android sdk 4.3
 
 
 Integrate the Baidu Unity3D Plugin into your Unity Game

@@ -8,7 +8,7 @@ namespace baidu
 
         public event BaiduEventHandler bannerEventHandler;
         public event BaiduEventHandler interstitialEventHandler;
-        public event BaiduEventHandler videoEventHandler;
+      //  public event BaiduEventHandler videoEventHandler;
 
 		private static Baidu _instance;	
 	
@@ -79,7 +79,7 @@ namespace baidu
         }
 
 
-
+		/*
          [DllImport("__Internal")]
         private static extern void _kmloadVideo();
         public void loadVideo()
@@ -100,7 +100,7 @@ namespace baidu
         {
             _kmshowVideo();
         }
-
+		*/
         [MonoPInvokeCallback(typeof(BaiduAdCallBack))]
         public static void onBaiduEventCallBack(string adtype, string eventName, string msg)
         {
@@ -113,10 +113,12 @@ namespace baidu
             {
                 Baidu.Instance().interstitialEventHandler(eventName, msg);
             }
+			/*
             else if (adtype == "video")
             {
                Baidu.Instance().videoEventHandler(eventName, msg);
             }
+            */
         }
         
 #elif UNITY_ANDROID
@@ -162,7 +164,7 @@ namespace baidu
         {
             jbaidu.Call("showInterstitial");
         }
-
+		/*
         public void loadVideo()
         {
             jbaidu.Call("loadVideo");
@@ -176,6 +178,7 @@ namespace baidu
         {
             jbaidu.Call("showVideo");
         }
+        */
        
         class InnerBaiduListener : IBaiduListener
         {
@@ -190,10 +193,11 @@ namespace baidu
                 {
                     baiduInstance.interstitialEventHandler(eventName, paramString);
                 }
-                else if (adtype == "video")
+               /* else if (adtype == "video")
                 {
                     baiduInstance.videoEventHandler(eventName, paramString);
                 }
+                */
             }
         }
 #else

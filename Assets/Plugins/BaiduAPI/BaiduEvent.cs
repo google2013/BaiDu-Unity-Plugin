@@ -11,7 +11,7 @@ namespace baidu
       
         public static readonly string onAdClicked = "onAdClicked";
         public static readonly string onAdSwitch = "onAdSwitch";
-        
+        public static readonly string onAdClose = "onAdClose";
         
 
     }
