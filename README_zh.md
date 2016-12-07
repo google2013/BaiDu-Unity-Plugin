@@ -28,7 +28,7 @@ BaiduUnityPlugin.unitypackage 是Baidu Unity 插件文件，可以直接通过as
 baidudemo.cs  是Baidu 的ios sdk和插件使用样例代码，样例代码里面说明了怎么在代码里面使用Unity Baidu插件
 Build base on 
 ------------
-Baidu iOS SDK 3 ,android sdk 4
+Baidu iOS SDK 4.4 ,android sdk 4
 Baidu Unity插件是基于 baidu ios sdk 3和android 4编写，也就是最新的baidu sdk
 
 Integrate the Baidu Unity3D Plugin into your Unity Game
@@ -67,7 +67,7 @@ Unity项目将会被导出为ios工程。为了顺利编译ios项目，你需要
 
 Add the following framework to xcode project
 
-    AdSupport.framework,CoreTelephony.framework,StoreKit.framework,MessageUI.framework,Security.framework
+    AdSupport.framework,CoreTelephony.framework,StoreKit.framework,MessageUI.framework,Security.framework,SafariServices.framework
 
  把下面的frame 添加至项目
 

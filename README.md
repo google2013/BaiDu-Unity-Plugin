@@ -17,7 +17,7 @@ BaiduUnityPlugin.unitypackage is the plugin  file for those that want to easily 
 
 Build base on 
 ------------
-Baidu iOS SDK 4.3 ,android sdk 4.3
+Baidu iOS SDK 4.4 ,android sdk 4.3
 
 
 Integrate the Baidu Unity3D Plugin into your Unity Game
@@ -42,7 +42,7 @@ platform, then **Switch Platform**, then **Build**. This will export an
 XCode project. You'll need to do the following before you can run it:
  Add the following framework to xcode project
 
-    AdSupport.framework,CoreTelephony.framework,StoreKit.framework,MessageUI.framework,Security.framework
+    AdSupport.framework,CoreTelephony.framework,StoreKit.framework,MessageUI.framework,Security.framework,SafariServices.framework
 
 
 Running the Unity Baidu Plugin demo code 
